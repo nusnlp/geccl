@@ -12,11 +12,11 @@ This system has been tested in the following environment.
 + Pytorch version 1.7.1
 + CUDA Version 10.1
 
-## Dataset Download and evaluation:
+## Dataset:
 
 [CWEB dataset](https://github.com/SimonHFL/CWEB)
 
-## For GEC-PD:
+## For GEC-PD system:
 
 * Go to the gec-pseudo folder and carry out the following instructions
 
@@ -56,7 +56,7 @@ chmod +x train-.sh
 | CL | G | 0 | 42.41 | 23.01 | 36.29
 | CL | G | 1 | 32.00 | 23.28 | 29.77
 
-## For GEC-BART:
+## For GEC-BART system:
 
 * Go to the BART-GEC folder and carry out the following instructions
 
@@ -104,7 +104,7 @@ CUDA_VISIBLE_DEVICES=0 python3 translate-flexible-data.py --model_dir=model/4gpu
 
 ## Output
 
-Our output result reported in the paper can be found in output folder. 
+Our output result reported in the paper can be found in [output folder](https://github.com/nusnlp/geccl/tree/main/output). 
 
 ## Model Checkpoints
 
