@@ -27,14 +27,14 @@ This system has been tested in the following environment.
 cd fairseq
 pip install --editable .
 ```
-* Download our generated positive and negative samples in [data](). 
+* Download generated positive and negative samples in [data](https://drive.google.com/drive/folders/1_DQ6bEXihB_BvLrY2_PXz3FfjLUixGv9?usp=sharing). 
 
-* Fine-tune the model for CL using 1 GPU using the train.sh in train-scripts folder.
+* Fine-tune the model for CL using 1 GPU using the train.sh in train-scripts folder, please specify the path to your gec-pseudo folder and path to your binarized data folder.
 ```
 chmod +x train.sh
 ./train.sh 0 model/test-cl
 ```
-* Fine-tune the model for CL- using 1 GPU using the train-.sh in train-scripts folder.
+* Fine-tune the model for CL- using 1 GPU using the train-.sh in train-scripts folder, please specify the path to your gec-pseudo folder and path to your binarized data folder.
 ```
 chmod +x train-.sh
 ./train-.sh 0 model/test-cl-
@@ -57,6 +57,7 @@ chmod +x train-.sh
 | CL | G | 1 | 32.00 | 23.28 | 29.77
 
 ## For GEC-BART:
+
 * Go to the BART-GEC folder and carry out the following instructions
 
 * Download all the required packedges and checkpoints from [GEC-BART](https://github.com/Katsumata420/generic-pretrained-GEC/tree/master/BART-GEC).
@@ -67,17 +68,17 @@ chmod +x train-.sh
 ```
 pip install --editable .
 ```
-* Download our generated positive and negative samples in [data]().
+* Download generated positive and negative samples in [data](https://drive.google.com/drive/folders/1cKp5JnYXNIzgaCTqq6YVcnQjfi0dBDZl?usp=sharing).
 
-* Fine-tune the model for CL using 4 GPUs, please specify the path to your BART-GEC folder, path to your trained BART model and path to your binarized data folder.
+* Fine-tune the model for CL using 4 GPUs using the train.sh in train-scripts folder, please specify the path to your BART-GEC folder, path to your trained BART model and path to your binarized data folder.
 ```
 chmod +x train.sh
 ./train.sh 0,1,2,3 0.85 0.5 model/4gpu-cweb-0.85-0.5
 ```
-* Fine-tune the model for CL- using 4 GPUs, please specify the path to your BART-GEC folder, path to your trained BART model and path to your binarized data folder.
+* Fine-tune the model for CL- using 4 GPUs using the train-.sh in train-scripts folder, please specify the path to your BART-GEC folder, path to your trained BART model and path to your binarized data folder.
 ```
-chmod +x train.sh
-./train.sh 0,1,2,3 0.85 0.5 model/4gpu-cweb-0.85-0.5-
+chmod +x train-.sh
+./train-.sh 0,1,2,3 0.85 0.5 model/4gpu-cweb-0.85-0.5-
 ```
 * Make prediction using translate-flexible-data.py. For example:
 ```
@@ -107,7 +108,7 @@ Our output result reported in the paper can be found in output folder.
 
 ## Model Checkpoints
 
-The fine-tuned checkpoints we obtained can be found in [checkpints](). 
+The fine-tuned checkpoints we obtained can be found in [GEC-BART-ckpt](https://drive.google.com/drive/folders/1U5tUI2SSipzETtcq5L_mXCiQweCiX3N-?usp=sharing) and [GEC-PD-ckpt](https://drive.google.com/drive/folders/1vY2duWRqXZSSWgxafk7354VM9iHlbQ1k?usp=sharing). 
 
 ## Citation
 
